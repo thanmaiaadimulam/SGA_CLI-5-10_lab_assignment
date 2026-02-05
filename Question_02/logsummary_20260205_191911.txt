@@ -1,0 +1,9 @@
+Log summary for: system.log
+Generated on   : Thu Feb  5 19:19:11 CET 2026
+
+INFO lines   : 5
+WARNING lines: 2
+ERROR lines  : 2
+
+Most recent ERROR:
+2026-02-05 09:17:42 [ERROR] Backup job failed: permission denied

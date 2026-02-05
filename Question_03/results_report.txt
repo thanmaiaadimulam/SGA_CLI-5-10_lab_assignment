@@ -1,0 +1,10 @@
+Results Report
+==============
+
+Failed in exactly ONE subject:
+
+Passed in ALL subjects:
+
+Summary:
+  Failed in exactly ONE subject: 0
+  Passed in ALL subjects       : 0
