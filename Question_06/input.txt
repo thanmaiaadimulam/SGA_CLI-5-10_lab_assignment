@@ -1,0 +1,4 @@
+Linux shell scripting is powerful and flexible.
+Shell tools like tr sort uniq wc and awk
+help compute useful text metrics quickly.
+

@@ -1,0 +1,9 @@
+2026-02-05 09:00:01 [INFO] System boot initiated by user root
+2026-02-05 09:00:10 [INFO] Loaded kernel modules successfully
+2026-02-05 09:05:22 [WARNING] Disk usage on /dev/disk1s1 exceeded 80%
+2026-02-05 09:10:45 [INFO] Started background backup job
+2026-02-05 09:11:03 [ERROR] Backup job failed: network timeout
+2026-02-05 09:15:17 [INFO] Retrying backup job
+2026-02-05 09:17:42 [ERROR] Backup job failed: permission denied
+2026-02-05 09:20:00 [WARNING] High memory usage detected
+2026-02-05 09:25:30 [INFO] System check complete, no critical issues

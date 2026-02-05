@@ -1,0 +1,11 @@
+a
+AEIOU
+bbb
+sky
+linux
+script
+rhythm
+tool
+data
+echo
+

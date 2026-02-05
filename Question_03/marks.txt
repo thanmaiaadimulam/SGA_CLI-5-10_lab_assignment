@@ -1,0 +1,6 @@
+RollNo Name M1 M2 M3
+101 Alice 45 67 82
+102 Bob 30 55 60
+103 Carol 20 25 40
+104 David 33 33 33
+105 Eve 90 10 95
