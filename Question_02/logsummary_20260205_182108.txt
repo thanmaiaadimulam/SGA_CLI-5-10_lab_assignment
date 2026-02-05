@@ -1,0 +1,10 @@
+Log summary for: app.log
+Generated on   : Thu Feb  5 18:21:08 CET 2026
+
+INFO lines   : 1
+WARNING lines: 0
+0
+ERROR lines  : 1
+
+Most recent ERROR:
+2025-01-12 10:01 ERROR Disk Fail

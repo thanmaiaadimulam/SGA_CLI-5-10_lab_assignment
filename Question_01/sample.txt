@@ -1,4 +1,0 @@
-This is a sample file.
-It contains multiple lines
-to demonstrate wc output.
-
