@@ -1,4 +1,4 @@
-## Linux Lab Assignment – CLI Questions 1–10
+## CLI Lab Assignment – CLI Questions 1–10
 
 This repository contains 10 self-contained question folders (`Question_01` … `Question_10`) as submission for CLI lab assignment.  
 Each folder includes:
