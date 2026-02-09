@@ -5,13 +5,11 @@
 
 ### How to Run
 
-Make the script executable (one-time):
 
 ```bash
 chmod +x validate_results.sh
 ```
 
-Run the script from inside the `Question_03` directory:
 
 ```bash
 ./validate_results.sh
@@ -46,23 +44,6 @@ Detailed report written to: results_report.txt
 ### Explanation
 
 The first command creates `marks.txt` with three students (John, Jane, Bob) and their marks in three subjects. After making the script executable, `validate_results.sh` is run. The summary shows **0** for both categories: with a typical pass threshold (e.g. 33), John (40,50,60) may pass all, Jane (20,50,60) fails one, and Bob (20,20,60) fails two—so the exact counts depend on the script’s pass/fail logic and thresholds. The script still writes the full breakdown to `results_report.txt` for detailed per-student analysis.
-
-### Simulated Terminal Output (alternative example)
-
-```bash
-$ cd Question_03
-$ chmod +x validate_results.sh
-$ ./validate_results.sh
-  102 Bob (Marks: 30, 55, 60)
-  105 Eve (Marks: 90, 10, 95)
-
-Passed in ALL subjects:
-  101 Alice (Marks: 45, 67, 82)
-  104 David (Marks: 33, 33, 33)
-
-Summary:
-  Failed in exactly ONE subject: 2
-  Passed in ALL subjects       : 2
 
 Detailed report written to: results_report.txt
 ```
