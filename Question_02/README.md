@@ -5,13 +5,11 @@
 
 ### How to Run
 
-Make the script executable (one-time):
 
 ```bash
 chmod +x logparser.sh
 ```
 
-Run the script with the path to a log file. Example using the provided `system.log`:
 
 ```bash
 ./logparser.sh system.log
@@ -46,19 +44,5 @@ Summary written to: logsummary_20260205_191911.txt
 
 After making the script executable, `logparser.sh` is run with `system.log` as the input. The script counts log levels (**INFO: 5**, **WARNING: 2**, **ERROR: 2**), prints the **most recent ERROR** line (backup job failed due to permission denied), and writes a timestamped summary file (`logsummary_20260205_191911.txt`). This shows the log parser correctly aggregates levels and highlights the latest error for quick diagnosis.
 
-*(The exact summary filename and timestamps will vary depending on the current date/time.)*
 
-### Simulated Terminal Output (alternative example)
-
-```bash
-$ cd Question_02
-$ chmod +x logparser.sh
-$ ./logparser.sh system.log
-INFO count   : 4
-WARNING count: 2
-ERROR count  : 2
-Most recent ERROR:
-2026-02-05 09:17:42 [ERROR] Backup job failed: permission denied
-Summary written to: logsummary_20260205_093000.txt
-```
 
