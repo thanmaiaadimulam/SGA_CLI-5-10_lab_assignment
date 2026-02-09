@@ -43,18 +43,3 @@ Unique word count: 21
 ### Explanation
 
 After making the script executable, `metrics.sh` reads `input.txt` and computes word statistics: the **longest word** is "scripting" (9 characters), the **shortest word** is "is" (2 characters), the **average word length** is 4.95, and there are **21 unique words**. These metrics show the script correctly tokenizing the text, tracking min/max and total length, and counting distinct words.
-
-*(Exact values may vary slightly if you edit `input.txt`.)*
-
-### Simulated Terminal Output (alternative example)
-
-```bash
-$ cd Question_06
-$ chmod +x metrics.sh
-$ ./metrics.sh
-Longest word : scripting (length 9)
-Shortest word: tr (length 2)
-Average length: 4.46
-Unique word count: 17
-```
-
