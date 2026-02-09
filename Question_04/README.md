@@ -5,13 +5,11 @@
 
 ### How to Run
 
-Make the script executable (one-time):
 
 ```bash
 chmod +x emailcleaner.sh
 ```
 
-Run the script from inside the `Question_04` directory:
 
 ```bash
 ./emailcleaner.sh
@@ -53,5 +51,5 @@ invalid-email
 
 ### Explanation
 
-The first command fills `emails.txt` with one valid address (`test@gmail.com`), one invalid (`invalid-email`), and a duplicate valid. Running `emailcleaner.sh` validates and splits: valid addresses go to `valid.txt`, invalid to `invalid.txt`. The "Permission denied" messages for `invalid.txt` indicate a permissions issue (e.g. read-only or wrong ownership) on that file; despite that, the script still reports writing to both files. The `cat` output shows **valid.txt** contains the deduplicated valid email and **invalid.txt** contains the invalid one, so the separation logic works; fixing permissions on `invalid.txt` would remove the errors.
+The first command fills `emails.txt` with one valid address (`test@gmail.com`), one invalid (`invalid-email`), and a duplicate valid. Running `emailcleaner.sh` validates and splits: valid addresses go to `valid.txt`, invalid to `invalid.txt`. The "Permission denied" messages for `invalid.txt` indicate a permissions issue (e.g. read-only or wrong ownership) on that file; despite that, the script still reports writing to both files. The `cat` output shows **valid.txt** contains the duplicated valid email and **invalid.txt** contains the invalid one, so the separation logic works; fixing permissions on `invalid.txt` would remove the errors.
 
