@@ -5,13 +5,13 @@
 
 ### How to Run
 
-Make the script executable (one-time):
+Make the script executable:
 
 ```bash
 chmod +x bg_move.sh
 ```
 
-Run the script with a source directory. Example using the provided `data` directory:
+Run the script with a source directory.Using the provided `data` directory:
 
 ```bash
 ./bg_move.sh data
@@ -45,21 +45,4 @@ Background move completed successfully.
 
 The script is made executable and run with `data` as the source directory. It starts the move from `data` to `backup` in the **background**, prints the **background process ID** (e.g. 47677) so it can be monitored or killed if needed, then waits for that job to finish. The final line confirms the background move completed successfully, so files from `data/` are now under `backup/`. This demonstrates background job control with `&`, `$!`, and `wait`.
 
-*(Actual PID will vary at runtime.)*
-
-### Simulated Terminal Output (with directory listing)
-
-```bash
-$ cd Question_08
-$ chmod +x bg_move.sh
-$ ls data
-file1.txt  file2.log
-$ ./bg_move.sh data
-Starting background move from 'data' to 'backup'...
-Background mv PID: 12345
-Background move completed successfully.
-$ ls data
-$ ls backup
-file1.txt  file2.log
-```
 
