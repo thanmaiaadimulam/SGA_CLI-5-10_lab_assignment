@@ -46,19 +46,4 @@ Parent exiting.
 
 The program is compiled with `gcc` and then run. The **parent** (PID 48304) starts and announces it is waiting for its **child** (PID 48305). The child runs, prints that it is exiting, and terminates. The parent then **reaps** the child with `waitpid()`, prints the child’s PID and exit status (0), and exits. By collecting the child’s exit status, the parent allows the kernel to remove the child from the process table, so no **zombie** process is left. This demonstrates correct use of `fork()` and `waitpid()` for zombie prevention.
 
-*(Actual PIDs will vary per run.)*
-
-### Simulated Terminal Output (alternative example)
-
-```bash
-$ cd Question_09
-$ gcc zombie_prevention.c -o zombie_prevention
-$ ./zombie_prevention
-Parent PID: 54321
-Child started with PID: 54322
-Parent waiting for child (PID 54322)...
-Child (PID 54322) exiting now.
-Parent cleaned up child PID 54322 with exit status 0.
-Parent exiting.
-```
 
