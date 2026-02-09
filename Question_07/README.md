@@ -11,7 +11,7 @@ Make the script executable (one-time):
 chmod +x patterns.sh
 ```
 
-Run the script with a word list file. Example using the provided `words.txt`:
+Run the script with a word list file. using the provided `words.txt`:
 
 ```bash
 ./patterns.sh words.txt
@@ -45,34 +45,4 @@ Mixed words written to : mixed.txt
 
 The script is made executable and run with `words.txt` as input. It classifies every word into three groups using pattern checks: **vowel-only** (e.g. "a", "aeiou") → `vowels.txt`, **consonant-only** (e.g. "sky", "rhythm") → `consonants.txt`, and **mixed** (starts with a consonant and has both vowels and consonants) → `mixed.txt`. The three confirmation lines show that all three output files were written successfully, demonstrating the pattern-based word categorization.
 
-### Simulated Terminal Output (with example contents)
-
-```bash
-$ cd Question_07
-$ chmod +x patterns.sh
-$ ./patterns.sh words.txt
-Vowel-only words written to     : vowels.txt
-Consonant-only words written to : consonants.txt
-Mixed words written to          : mixed.txt
-```
-
-Example contents after running:
-
-```bash
-$ cat vowels.txt
-a
-AEIOU
-
-$ cat consonants.txt
-bbb
-sky
-rhythm
-
-$ cat mixed.txt
-linux
-script
-tool
-data
-echo
-```
 
