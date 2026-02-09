@@ -8,8 +8,6 @@ Each folder includes:
 - **Sample output files** (where useful)
 - **`README.md`** that serves as the submission report for that question
 
-### How to Use
-
 - **Navigate** into a question folder, e.g.:
 
 ```bash
