@@ -60,29 +60,3 @@ Parent: graceful exit complete.
 
 The program compiles and runs with one parent and two children. **Child 1** sends **SIGTERM** to the parent after 5 seconds; **Child 2** sends **SIGINT** after 10 seconds. The parent runs a work loop, printing status with two flags (**SIGTERM=0/1**, **SIGINT=0/1**). When it receives SIGTERM, it prints "Initiating graceful shutdown step" and sets SIGTERM=1; when it receives SIGINT, it prints "Finalizing graceful exit" and sets SIGINT=1. After **both** signals are received, the parent reaps both children with `waitpid()`, prints their exit statuses, and then "graceful exit complete." This shows coordinated handling of SIGTERM and SIGINT and a clean, signal-driven shutdown.
 
-*(Actual PIDs and timing output will vary per run.)*
-
-### Simulated Terminal Output (full example)
-
-```bash
-$ cd Question_10
-$ gcc signal_handling.c -o signal_handling
-$ ./signal_handling
-Parent PID: 55000
-Child 1 (PID 55001): will send SIGTERM to parent (PID 55000) after 5 seconds.
-Child 2 (PID 55002): will send SIGINT to parent (PID 55000) after 10 seconds.
-Parent: entering work loop. Waiting for signals from children...
-Parent: working... (SIGTERM=0, SIGINT=0)
-...
-Parent: Caught SIGTERM from child 1. Initiating graceful shutdown step.
-Child 1 (PID 55001): SIGTERM sent, exiting.
-Parent: working... (SIGTERM=1, SIGINT=0)
-...
-Parent: Caught SIGINT from child 2. Finalizing graceful exit.
-Child 2 (PID 55002): SIGINT sent, exiting.
-Parent: both SIGTERM and SIGINT received. Cleaning up children...
-Parent: child PID 55001 exited with status 0.
-Parent: child PID 55002 exited with status 0.
-Parent: graceful exit complete.
-```
-
