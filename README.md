@@ -1,6 +1,6 @@
 ## Linux Lab Assignment – CLI Questions 1–10
 
-This repository contains 10 self-contained question folders (`Question_01` … `Question_10`) for a Linux / Systems Programming lab.  
+This repository contains 10 self-contained question folders (`Question_01` … `Question_10`) as submission for CLI lab assignment.  
 Each folder includes:
 
 - **Solution source code** (`.sh` or `.c`)
@@ -20,5 +20,5 @@ cd Question_01
   - Run the script / program with the exact command shown
   - Inspect the example input and simulated output
 
-All scripts are written for a POSIX-like environment (tested on macOS/Linux with `bash` and `gcc` available).
+All scripts are written on tested on macOS/Linux with `bash` and `gcc` available.
 
