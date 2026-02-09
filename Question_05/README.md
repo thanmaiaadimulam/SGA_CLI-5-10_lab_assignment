@@ -5,13 +5,11 @@
 
 ### How to Run
 
-Make the script executable (one-time):
 
 ```bash
 chmod +x sync.sh
 ```
 
-Run the script with two directory paths. Example using the provided `dirA` and `dirB`:
 
 ```bash
 ./sync.sh dirA dirB
